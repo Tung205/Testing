@@ -1,5 +1,9 @@
 def tuyenSinh(thpt, hoc_ba, sat):
-    if (thpt < 0 or thpt > 30 or hoc_ba < 0 or hoc_ba > 10 or sat < 0 or sat > 1600):
+    if (thpt < 0 or thpt > 30):
+        return "Error"
+    if (hoc_ba < 0 or hoc_ba > 10):
+        return "Error"
+    if (sat < 0 or sat > 1600):
         return "Error"
     if (thpt < 22 or hoc_ba < 8 or sat < 1300):
         return "Rejected"
@@ -18,3 +22,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
